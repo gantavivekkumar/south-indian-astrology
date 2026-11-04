@@ -1,0 +1,18 @@
+import type { Metadata } from "next";
+import "./globals.css";
+
+export const metadata: Metadata = {
+  title: "Jyotisha | South Indian Vedic Astrology",
+  description:
+    "Explore Vedic astrology, birth chart traditions, nakshatras and Panchangam in a calm, welcoming space.",
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{ children: React.ReactNode }>) {
+  return (
+    <html lang="en">
+      <body>{children}</body>
+    </html>
+  );
+}
